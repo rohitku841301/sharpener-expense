@@ -1,0 +1,26 @@
+.navIcon{
+    width: 20%;
+}
+.input-group{
+    width: 70%;
+    margin: auto;
+}
+
+.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group {
+    width: 31%;
+    margin: 20px auto;
+
+}

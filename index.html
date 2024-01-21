@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h2>Expense</h2> 
+            <img class="navIcon" src="https://png.pngtree.com/png-vector/20220628/ourmid/pngtree-pay-tax-icon-green-logo-png-image_5550560.png">
+            <h2>Tracker</h2>
+          </a>
+        </div>
+      </nav>
+
+    <form onsubmit="addExpense(event)">
+        <div class="input-group flex-nowrap">
+
+            <label for="expenseAmout" class="input-group-text" id="addon-wrapping">💰</label>
+            <input type="number" id="expenseAmout" name="amount" class="form-control" placeholder="amount" aria-label="Username" aria-describedby="addon-wrapping">
+
+            <label for="Description" class="input-group-text" id="addon-wrapping">⿰</label>
+            <input type="text" id="Description" name="description" class="form-control" placeholder="description" aria-label="Username" aria-describedby="addon-wrapping">
+
+            <select name="category" id="category" name="category" >
+                <option value="0">Select Category</option>
+                <option value="movies">Movies</option>
+                <option value="food">Food</option>
+                <option value="traveling">Travelling</option>
+                <option value="study">Study</option>
+                <option value="others">Others</option>
+            </select>
+            <button type="submit" class="btn btn-success">Add Expense</button>
+           
+        </div>
+      
+    </form>
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
